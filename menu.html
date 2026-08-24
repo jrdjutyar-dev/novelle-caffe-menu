@@ -7,102 +7,29 @@
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0;
-  background:#150904;
-  color:#f0a94a;
-  font-family:Tahoma,Arial,sans-serif;
-}
-.wrap{
-  width:min(100%,760px);
-  margin:auto;
-  padding:22px 16px 110px;
-}
-.header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:22px;
-}
-.header h1{
-  margin:0;
-  color:#f4ad45;
-  font-size:clamp(36px,8vw,58px);
-  font-weight:900;
-}
-.home{
-  color:#f4ad45;
-  font-size:18px;
-  font-weight:800;
-  text-decoration:none;
-}
+body{margin:0;background:#150904;color:#f0a94a;font-family:Tahoma,Arial,sans-serif}
+.wrap{width:min(100%,760px);margin:auto;padding:22px 16px 110px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+.header h1{margin:0;color:#f4ad45;font-size:clamp(36px,8vw,58px);font-weight:900}
+.home{color:#f4ad45;font-size:18px;font-weight:800;text-decoration:none}
 .card{
-  direction:rtl;
-  display:grid;
-  grid-template-columns:42% 58%;
-  min-height:158px;
-  margin-bottom:15px;
-  overflow:hidden;
-  border:1.5px solid #9b5723;
-  border-radius:28px;
+  direction:rtl;display:grid;grid-template-columns:42% 58%;min-height:158px;
+  margin-bottom:15px;overflow:hidden;border:1.5px solid #9b5723;border-radius:28px;
   background:linear-gradient(90deg,#2a1206,#3a1909 52%,#1b0c05);
-  text-decoration:none;
-  -webkit-tap-highlight-color:transparent;
+  text-decoration:none;-webkit-tap-highlight-color:transparent
 }
-.photo{
-  min-width:0;
-  overflow:hidden;
-  border-left:1px solid #9b5723;
-}
-.photo img{
-  width:100%;
-  height:100%;
-  min-height:158px;
-  display:block;
-  object-fit:cover;
-}
-.label{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:18px 12px;
-}
-.ar{
-  display:block;
-  color:#f4ad45;
-  font-size:clamp(24px,5.3vw,36px);
-  font-weight:900;
-  line-height:1.25;
-}
-.en{
-  display:block;
-  color:#ce9356;
-  font-size:clamp(15px,3.6vw,22px);
-  letter-spacing:1px;
-  margin-top:8px;
-  direction:ltr;
-}
+.photo{min-width:0;overflow:hidden;border-left:1px solid #9b5723}
+.photo img{width:100%;height:100%;min-height:158px;display:block;object-fit:cover}
+.label{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 12px}
+.ar{display:block;color:#f4ad45;font-size:clamp(24px,5.3vw,36px);font-weight:900;line-height:1.25}
+.en{display:block;color:#ce9356;font-size:clamp(15px,3.6vw,22px);letter-spacing:1px;margin-top:8px;direction:ltr}
 .card:active{transform:scale(.992)}
 .card:focus-visible{outline:3px solid #f4ad45;outline-offset:3px}
 .whatsapp{
-  position:fixed;
-  z-index:5;
-  left:50%;
-  bottom:14px;
-  transform:translateX(-50%);
-  width:min(calc(100% - 28px),730px);
-  padding:17px 18px;
-  border-radius:999px;
-  background:#14994a;
-  color:white;
-  text-align:center;
-  text-decoration:none;
-  font-size:20px;
-  font-weight:900;
-  box-shadow:0 8px 28px rgba(0,0,0,.35);
+  position:fixed;z-index:5;left:50%;bottom:14px;transform:translateX(-50%);
+  width:min(calc(100% - 28px),730px);padding:17px 18px;border-radius:999px;
+  background:#14994a;color:white;text-align:center;text-decoration:none;
+  font-size:20px;font-weight:900;box-shadow:0 8px 28px rgba(0,0,0,.35)
 }
 @media(max-width:480px){
   .wrap{padding-left:14px;padding-right:14px}
@@ -132,32 +59,32 @@ body{
   </a>
 
   <a class="card" href="ice-cream.html">
-    <div class="photo"><img src="صورة ايس كريم.jpg" alt="ايس كريم"></div>
+    <div class="photo"><img src="ice-cream.jpg" alt="ايس كريم"></div>
     <div class="label"><span class="ar">ايس كريم</span><span class="en">ICE CREAM</span></div>
   </a>
 
-  <a class="card" href="عصير طازج.html">
-    <div class="photo"><img src="صورة عصير طازج.jpg" alt="عصائر طبيعية"></div>
+  <a class="card" href="fresh-juice.html">
+    <div class="photo"><img src="fresh-juice.jpg" alt="عصائر طبيعية"></div>
     <div class="label"><span class="ar">عصائر طبيعية</span><span class="en">FRESH JUICE</span></div>
   </a>
 
   <a class="card" href="cold-drinks.html">
-    <div class="photo"><img src="مشروبات باردة.jpg" alt="مشروبات باردة"></div>
+    <div class="photo"><img src="cold-drinks.jpg" alt="مشروبات باردة"></div>
     <div class="label"><span class="ar">مشروبات باردة</span><span class="en">COLD DRINKS</span></div>
   </a>
 
   <a class="card" href="milkshake.html">
-    <div class="photo"><img src="صورة ميلك شيك.jpg" alt="ميلك شيك"></div>
+    <div class="photo"><img src="milkshake.jpg" alt="ميلك شيك"></div>
     <div class="label"><span class="ar">ميلك شيك</span><span class="en">MILKSHAKE</span></div>
   </a>
 
   <a class="card" href="cocktails.html">
-    <div class="photo"><img src="صورة كوكتيلات.jpg" alt="كوكتيلات وسلطات فواكه"></div>
+    <div class="photo"><img src="cocktails.jpg" alt="كوكتيلات وسلطات فواكه"></div>
     <div class="label"><span class="ar">كوكتيلات وسلطات فواكه</span><span class="en">COCKTAILS &amp; FRUIT SALADS</span></div>
   </a>
 
   <a class="card" href="desserts.html">
-    <div class="photo"><img src="صورة الحلويات.jpg" alt="الحلويات"></div>
+    <div class="photo"><img src="desserts.jpg" alt="الحلويات"></div>
     <div class="label"><span class="ar">الحلويات</span><span class="en">DESSERTS</span></div>
   </a>
 
@@ -167,7 +94,7 @@ body{
   </a>
 
   <a class="card" href="shisha.html">
-    <div class="photo"><img src="شيشة.jpg" alt="اركيلة"></div>
+    <div class="photo"><img src="shisha.jpg" alt="اركيلة"></div>
     <div class="label"><span class="ar">اركيلة</span><span class="en">SHISHA</span></div>
   </a>
 </main>
