@@ -6,39 +6,172 @@
 <title>أقسام المنيو | Novelle Caffè</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#160b06;color:#f1ad4b;font-family:Tahoma,Arial,sans-serif}
-.wrap{width:min(100%,760px);margin:auto;padding:18px 16px 105px}
-.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:8px 0 20px}
-.top h1{margin:0;font-size:clamp(34px,8vw,56px);font-weight:800;color:#f5b34e}
-.home{color:#f5b34e;text-decoration:none;font-size:18px;font-weight:700}
-.card{display:grid;grid-template-columns:minmax(0,1fr) 155px;align-items:center;gap:14px;min-height:132px;margin:0 0 16px;padding:10px 12px 10px 20px;text-decoration:none;border:1.5px solid #9a5824;border-radius:28px;background:linear-gradient(90deg,#2a1408 0%,#3a1b0c 55%,#1d0e07 100%);overflow:hidden}
-.card .txt{text-align:center;min-width:0}
-.card .ar{display:block;color:#f1ad4b;font-size:clamp(23px,5.2vw,34px);font-weight:800;line-height:1.25}
-.card .en{display:block;color:#cf9658;font-size:clamp(15px,3.7vw,22px);letter-spacing:1px;margin-top:7px}
-.card img{width:155px;height:110px;object-fit:cover;border-radius:22px;border:1px solid #9a5824;display:block}
-.card:active{transform:scale(.99)}
-.wa{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);width:min(calc(100% - 32px),720px);text-decoration:none;background:#159447;color:#fff;text-align:center;padding:17px 20px;border-radius:999px;font-size:20px;font-weight:800}
-@media(max-width:440px){
-  .card{grid-template-columns:minmax(0,1fr) 120px;min-height:116px;border-radius:24px}
-  .card img{width:120px;height:94px;border-radius:18px}
-  .top h1{font-size:38px}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:#150904;
+  color:#f0a94a;
+  font-family:Tahoma,Arial,sans-serif;
+}
+.wrap{
+  width:min(100%,760px);
+  margin:auto;
+  padding:22px 16px 110px;
+}
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:22px;
+}
+.header h1{
+  margin:0;
+  color:#f4ad45;
+  font-size:clamp(36px,8vw,58px);
+  font-weight:900;
+}
+.home{
+  color:#f4ad45;
+  font-size:18px;
+  font-weight:800;
+  text-decoration:none;
+}
+.card{
+  direction:rtl;
+  display:grid;
+  grid-template-columns:42% 58%;
+  min-height:158px;
+  margin-bottom:15px;
+  overflow:hidden;
+  border:1.5px solid #9b5723;
+  border-radius:28px;
+  background:linear-gradient(90deg,#2a1206,#3a1909 52%,#1b0c05);
+  text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.photo{
+  min-width:0;
+  overflow:hidden;
+  border-left:1px solid #9b5723;
+}
+.photo img{
+  width:100%;
+  height:100%;
+  min-height:158px;
+  display:block;
+  object-fit:cover;
+}
+.label{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px 12px;
+}
+.ar{
+  display:block;
+  color:#f4ad45;
+  font-size:clamp(24px,5.3vw,36px);
+  font-weight:900;
+  line-height:1.25;
+}
+.en{
+  display:block;
+  color:#ce9356;
+  font-size:clamp(15px,3.6vw,22px);
+  letter-spacing:1px;
+  margin-top:8px;
+  direction:ltr;
+}
+.card:active{transform:scale(.992)}
+.card:focus-visible{outline:3px solid #f4ad45;outline-offset:3px}
+.whatsapp{
+  position:fixed;
+  z-index:5;
+  left:50%;
+  bottom:14px;
+  transform:translateX(-50%);
+  width:min(calc(100% - 28px),730px);
+  padding:17px 18px;
+  border-radius:999px;
+  background:#14994a;
+  color:white;
+  text-align:center;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:900;
+  box-shadow:0 8px 28px rgba(0,0,0,.35);
+}
+@media(max-width:480px){
+  .wrap{padding-left:14px;padding-right:14px}
+  .header h1{font-size:40px}
+  .card{grid-template-columns:43% 57%;min-height:128px;border-radius:24px}
+  .photo img{min-height:128px}
+  .ar{font-size:25px}
+  .en{font-size:16px}
 }
 </style>
 </head>
 <body>
 <main class="wrap">
-  <div class="top"><h1>أقسام المنيو</h1><a class="home" href="index.html">الرئيسية</a></div>
-  <a class="card" href="hot-drinks.html"><div class="txt"><span class="ar">مشاريب ساخنة</span><span class="en">HOT DRINKS</span></div><img src="hot-drinks.jpg" alt="مشاريب ساخنة"></a>
-  <a class="card" href="mojito.html"><div class="txt"><span class="ar">موهيتو</span><span class="en">MOJITO</span></div><img src="mojito.jpg" alt="موهيتو"></a>
-  <a class="card" href="ice-cream.html"><div class="txt"><span class="ar">ايس كريم</span><span class="en">ICE CREAM</span></div><img src="صورة ايس كريم.jpg" alt="ايس كريم"></a>
-  <a class="card" href="fresh-juice.html"><div class="txt"><span class="ar">عصائر طبيعية</span><span class="en">FRESH JUICE</span></div><img src="صورة عصير طازج.jpg" alt="عصائر طبيعية"></a>
-  <a class="card" href="cold-drinks.html"><div class="txt"><span class="ar">مشاريب باردة</span><span class="en">COLD DRINKS</span></div><img src="مشروبات باردة.jpg" alt="مشاريب باردة"></a>
-  <a class="card" href="milkshake.html"><div class="txt"><span class="ar">ميلك شيك</span><span class="en">MILKSHAKE</span></div><img src="صورة ميلك شيك.jpg" alt="ميلك شيك"></a>
-  <a class="card" href="cocktails.html"><div class="txt"><span class="ar">كوكتيلات وسلطات فواكه</span><span class="en">COCKTAILS &amp; FRUIT SALADS</span></div><img src="صورة كوكتيلات.jpg" alt="كوكتيلات وسلطات فواكه"></a>
-  <a class="card" href="desserts.html"><div class="txt"><span class="ar">الحلويات</span><span class="en">DESSERTS</span></div><img src="صورة الحلويات.jpg" alt="الحلويات"></a>
-  <a class="card" href="nuts.html"><div class="txt"><span class="ar">كرزات</span><span class="en">NUTS</span></div><img src="nuts.jpg" alt="كرزات"></a>
-  <a class="card" href="shisha.html"><div class="txt"><span class="ar">اركيلة</span><span class="en">SHISHA</span></div><img src="شيشة.jpg" alt="اركيلة"></a>
+  <div class="header">
+    <h1>أقسام المنيو</h1>
+    <a class="home" href="index.html">الرئيسية</a>
+  </div>
+
+  <a class="card" href="hot-drinks.html">
+    <div class="photo"><img src="hot-drinks.jpg" alt="مشروبات ساخنة"></div>
+    <div class="label"><span class="ar">مشروبات ساخنة</span><span class="en">HOT DRINKS</span></div>
+  </a>
+
+  <a class="card" href="mojito.html">
+    <div class="photo"><img src="mojito.jpg" alt="موهيتو"></div>
+    <div class="label"><span class="ar">موهيتو</span><span class="en">MOJITO</span></div>
+  </a>
+
+  <a class="card" href="ice-cream.html">
+    <div class="photo"><img src="صورة ايس كريم.jpg" alt="ايس كريم"></div>
+    <div class="label"><span class="ar">ايس كريم</span><span class="en">ICE CREAM</span></div>
+  </a>
+
+  <a class="card" href="عصير طازج.html">
+    <div class="photo"><img src="صورة عصير طازج.jpg" alt="عصائر طبيعية"></div>
+    <div class="label"><span class="ar">عصائر طبيعية</span><span class="en">FRESH JUICE</span></div>
+  </a>
+
+  <a class="card" href="cold-drinks.html">
+    <div class="photo"><img src="مشروبات باردة.jpg" alt="مشروبات باردة"></div>
+    <div class="label"><span class="ar">مشروبات باردة</span><span class="en">COLD DRINKS</span></div>
+  </a>
+
+  <a class="card" href="milkshake.html">
+    <div class="photo"><img src="صورة ميلك شيك.jpg" alt="ميلك شيك"></div>
+    <div class="label"><span class="ar">ميلك شيك</span><span class="en">MILKSHAKE</span></div>
+  </a>
+
+  <a class="card" href="cocktails.html">
+    <div class="photo"><img src="صورة كوكتيلات.jpg" alt="كوكتيلات وسلطات فواكه"></div>
+    <div class="label"><span class="ar">كوكتيلات وسلطات فواكه</span><span class="en">COCKTAILS &amp; FRUIT SALADS</span></div>
+  </a>
+
+  <a class="card" href="desserts.html">
+    <div class="photo"><img src="صورة الحلويات.jpg" alt="الحلويات"></div>
+    <div class="label"><span class="ar">الحلويات</span><span class="en">DESSERTS</span></div>
+  </a>
+
+  <a class="card" href="nuts.html">
+    <div class="photo"><img src="nuts.jpg" alt="كرزات"></div>
+    <div class="label"><span class="ar">كرزات</span><span class="en">NUTS</span></div>
+  </a>
+
+  <a class="card" href="shisha.html">
+    <div class="photo"><img src="شيشة.jpg" alt="اركيلة"></div>
+    <div class="label"><span class="ar">اركيلة</span><span class="en">SHISHA</span></div>
+  </a>
 </main>
-<a class="wa" href="https://wa.me/9647511634749">طلب عبر واتساب • 07511634749</a>
+
+<a class="whatsapp" href="https://wa.me/9647511634749">طلب عبر واتساب • 07511634749</a>
 </body>
 </html>
