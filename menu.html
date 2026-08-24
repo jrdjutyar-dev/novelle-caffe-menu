@@ -1,12 +1,44 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Novelle Caffè</title><meta name="theme-color" content="#100905"><style>
-*{box-sizing:border-box}body{margin:0;background:#100905;color:#fff1d5;font-family:Tahoma,Arial,sans-serif;min-height:100vh}
-.wrap{max-width:720px;margin:auto;padding:16px}.hero{text-align:center;padding:20px 4px}.logo{width:min(100%,430px);border-radius:24px;border:1px solid #a76b2e;box-shadow:0 16px 40px #0008}
-h1{color:#efb35b;margin:16px 0 4px}.sub{color:#c08b4f;letter-spacing:2px;font-size:12px}.btn{display:block;text-decoration:none;text-align:center;color:#f1b65d;border:1px solid #8f5927;background:linear-gradient(#2b180d,#170d08);border-radius:18px;padding:17px;margin:12px 0;font-size:20px;font-weight:700}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff1d5;border:1px solid #8f5927;background:linear-gradient(#2b180d,#170d08);border-radius:18px;padding:10px;min-height:108px}
-.thumb{width:92px;height:92px;border-radius:14px;object-fit:cover;border:1px solid #9a652f;flex:0 0 92px}.card h2{margin:0;color:#efb35b;font-size:18px}.card small{color:#bd8a50;letter-spacing:1px}
-.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.back{color:#efb35b;text-decoration:none;font-weight:700}
-.section-hero{width:100%;height:220px;object-fit:cover;border-radius:20px;border:1px solid #8f5927;margin:12px 0 16px}
-.list{border:1px solid #8f5927;background:#170d08;border-radius:18px;padding:8px 16px}.row{display:grid;grid-template-columns:1fr auto;gap:14px;padding:13px 3px;border-bottom:1px dotted #684322;font-size:18px}.row:last-child{border-bottom:0}.price{color:#efb35b;font-weight:700}
-.wa{display:block;position:sticky;bottom:8px;text-align:center;background:#188a48;color:#fff;text-decoration:none;padding:14px;border-radius:999px;font-weight:700;margin-top:20px}
-@media(max-width:560px){.grid{grid-template-columns:1fr}.card{min-height:100px}.thumb{width:86px;height:86px;flex-basis:86px}.section-hero{height:190px}}
-</style></head><body><div class="wrap"><div class="top"><h1>أقسام المنيو</h1><a class="back" href="index.html">الرئيسية</a></div><div class="grid"><a class="card" href="hot-drinks.html"><img class="thumb" src="hot-drinks.jpg" alt="مشاريب ساخنة"><div><h2>مشاريب ساخنة</h2><small>HOT DRINKS</small></div></a><a class="card" href="mojito.html"><img class="thumb" src="mojito.jpg" alt="موهيتو"><div><h2>موهيتو</h2><small>MOJITO</small></div></a><a class="card" href="ice-cream.html"><img class="thumb" src="ice-cream.jpg" alt="ايس كريم"><div><h2>ايس كريم</h2><small>ICE CREAM</small></div></a><a class="card" href="fresh-juice.html"><img class="thumb" src="fresh-juice.jpg" alt="عصائر طبيعية"><div><h2>عصائر طبيعية</h2><small>FRESH JUICE</small></div></a><a class="card" href="cold-drinks.html"><img class="thumb" src="cold-drinks.jpg" alt="مشاريب باردة"><div><h2>مشاريب باردة</h2><small>COLD DRINKS</small></div></a><a class="card" href="milkshake.html"><img class="thumb" src="milkshake.jpg" alt="ميلك شيك"><div><h2>ميلك شيك</h2><small>MILKSHAKE</small></div></a><a class="card" href="cocktails.html"><img class="thumb" src="cocktails.jpg" alt="كوكتيلات وسلطات فواكه"><div><h2>كوكتيلات وسلطات فواكه</h2><small>COCKTAILS & FRUIT SALADS</small></div></a><a class="card" href="desserts.html"><img class="thumb" src="desserts.jpg" alt="الحلويات"><div><h2>الحلويات</h2><small>DESSERTS</small></div></a><a class="card" href="nuts.html"><img class="thumb" src="nuts.jpg" alt="كرزات"><div><h2>كرزات</h2><small>NUTS</small></div></a><a class="card" href="shisha.html"><img class="thumb" src="shisha.jpg" alt="اركيلة"><div><h2>اركيلة</h2><small>SHISHA</small></div></a></div><a class="wa" href="https://wa.me/9647511634749">طلب عبر واتساب • 07511634749</a></div></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>أقسام المنيو | Novelle Caffè</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#160b06;color:#f1ad4b;font-family:Tahoma,Arial,sans-serif}
+.wrap{width:min(100%,760px);margin:auto;padding:18px 16px 105px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:8px 0 20px}
+.top h1{margin:0;font-size:clamp(34px,8vw,56px);font-weight:800;color:#f5b34e}
+.home{color:#f5b34e;text-decoration:none;font-size:18px;font-weight:700}
+.card{display:grid;grid-template-columns:minmax(0,1fr) 155px;align-items:center;gap:14px;min-height:132px;margin:0 0 16px;padding:10px 12px 10px 20px;text-decoration:none;border:1.5px solid #9a5824;border-radius:28px;background:linear-gradient(90deg,#2a1408 0%,#3a1b0c 55%,#1d0e07 100%);overflow:hidden}
+.card .txt{text-align:center;min-width:0}
+.card .ar{display:block;color:#f1ad4b;font-size:clamp(23px,5.2vw,34px);font-weight:800;line-height:1.25}
+.card .en{display:block;color:#cf9658;font-size:clamp(15px,3.7vw,22px);letter-spacing:1px;margin-top:7px}
+.card img{width:155px;height:110px;object-fit:cover;border-radius:22px;border:1px solid #9a5824;display:block}
+.card:active{transform:scale(.99)}
+.wa{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);width:min(calc(100% - 32px),720px);text-decoration:none;background:#159447;color:#fff;text-align:center;padding:17px 20px;border-radius:999px;font-size:20px;font-weight:800}
+@media(max-width:440px){
+  .card{grid-template-columns:minmax(0,1fr) 120px;min-height:116px;border-radius:24px}
+  .card img{width:120px;height:94px;border-radius:18px}
+  .top h1{font-size:38px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top"><h1>أقسام المنيو</h1><a class="home" href="index.html">الرئيسية</a></div>
+  <a class="card" href="hot-drinks.html"><div class="txt"><span class="ar">مشاريب ساخنة</span><span class="en">HOT DRINKS</span></div><img src="hot-drinks.jpg" alt="مشاريب ساخنة"></a>
+  <a class="card" href="mojito.html"><div class="txt"><span class="ar">موهيتو</span><span class="en">MOJITO</span></div><img src="mojito.jpg" alt="موهيتو"></a>
+  <a class="card" href="ice-cream.html"><div class="txt"><span class="ar">ايس كريم</span><span class="en">ICE CREAM</span></div><img src="صورة ايس كريم.jpg" alt="ايس كريم"></a>
+  <a class="card" href="fresh-juice.html"><div class="txt"><span class="ar">عصائر طبيعية</span><span class="en">FRESH JUICE</span></div><img src="صورة عصير طازج.jpg" alt="عصائر طبيعية"></a>
+  <a class="card" href="cold-drinks.html"><div class="txt"><span class="ar">مشاريب باردة</span><span class="en">COLD DRINKS</span></div><img src="مشروبات باردة.jpg" alt="مشاريب باردة"></a>
+  <a class="card" href="milkshake.html"><div class="txt"><span class="ar">ميلك شيك</span><span class="en">MILKSHAKE</span></div><img src="صورة ميلك شيك.jpg" alt="ميلك شيك"></a>
+  <a class="card" href="cocktails.html"><div class="txt"><span class="ar">كوكتيلات وسلطات فواكه</span><span class="en">COCKTAILS &amp; FRUIT SALADS</span></div><img src="صورة كوكتيلات.jpg" alt="كوكتيلات وسلطات فواكه"></a>
+  <a class="card" href="desserts.html"><div class="txt"><span class="ar">الحلويات</span><span class="en">DESSERTS</span></div><img src="صورة الحلويات.jpg" alt="الحلويات"></a>
+  <a class="card" href="nuts.html"><div class="txt"><span class="ar">كرزات</span><span class="en">NUTS</span></div><img src="nuts.jpg" alt="كرزات"></a>
+  <a class="card" href="shisha.html"><div class="txt"><span class="ar">اركيلة</span><span class="en">SHISHA</span></div><img src="شيشة.jpg" alt="اركيلة"></a>
+</main>
+<a class="wa" href="https://wa.me/9647511634749">طلب عبر واتساب • 07511634749</a>
+</body>
+</html>
